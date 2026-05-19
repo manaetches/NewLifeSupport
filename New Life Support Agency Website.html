@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>New Life Support Agency | Love, Care & Share</title>
+  <meta name="description" content="New Life Support Agency provides compassionate disability and injury support services — daily living assistance, physical therapy, occupational therapy, and support coordination. Guided by Love, Care & Share." />
+  <meta name="keywords" content="disability support, injury support, ACC support, occupational therapy, physical therapy, support coordination, New Zealand disability services, New Life Support Agency" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://www.newlifesupportagency.co.nz/" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="New Life Support Agency | Love, Care & Share" />
+  <meta property="og:description" content="Bringing hope, dignity, and practical support to those navigating life-changing injuries or disabilities." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.newlifesupportagency.co.nz/" />
+
+  <!-- Schema.org Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "New Life Support Agency",
+    "description": "Disability and injury support services guided by Love, Care and Share.",
+    "url": "https://www.newlifesupportagency.co.nz",
+    "areaServed": "New Zealand",
+    "serviceType": ["Disability Support", "Physical Therapy", "Occupational Therapy", "Support Coordination"]
+  }
+  </script>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary:   '#1a6b4a',
+            secondary: '#27a06e',
+            accent:    '#f4a020',
+            light:     '#f0faf5',
+          },
+          fontFamily: {
+            sans: ['Inter', 'system-ui', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <style>
+    html { scroll-behavior: smooth; }
+    .hero-gradient { background: linear-gradient(135deg, #1a6b4a 0%, #27a06e 50%, #1a6b4a 100%); }
+    .card-hover { transition: transform 0.3s ease, box-shadow 0.3s ease; }
+    .card-hover:hover { transform: translateY(-4px); box-shadow: 0 20px 40px rgba(0,0,0,0.12); }
+    .nav-link { transition: color 0.2s; }
+    .mobile-menu { transition: max-height 0.3s ease, opacity 0.3s ease; }
+    .value-icon { width: 64px; height: 64px; display: flex; align-items: center; justify-content: center; border-radius: 50%; font-size: 1.75rem; }
+  </style>
+</head>
+<body class="font-sans text-gray-800 bg-white">
+
+<!-- ───── NAVIGATION ───── -->
+<header class="sticky top-0 z-50 bg-white shadow-md">
+  <nav class="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between" role="navigation" aria-label="Main navigation">
+    <!-- Logo -->
+    <a href="#home" class="flex items-center gap-3" aria-label="New Life Support Agency home">
+      <div class="w-10 h-10 rounded-full hero-gradient flex items-center justify-center text-white font-bold text-lg">NL</div>
+      <div>
+        <div class="font-bold text-primary leading-tight text-sm sm:text-base">New Life</div>
+        <div class="text-xs text-gray-500 leading-tight">Support Agency</div>
+      </div>
+    </a>
+
+    <!-- Desktop Nav -->
+    <ul class="hidden md:flex items-center gap-6 text-sm font-medium">
+      <li><a href="#about" class="nav-link text-gray-600 hover:text-primary">About</a></li>
+      <li><a href="#values" class="nav-link text-gray-600 hover:text-primary">Our Values</a></li>
+      <li><a href="#services" class="nav-link text-gray-600 hover:text-primary">Services</a></li>
+      <li><a href="#who-we-support" class="nav-link text-gray-600 hover:text-primary">Who We Support</a></li>
+      <li><a href="#team" class="nav-link text-gray-600 hover:text-primary">Team</a></li>
+      <li><a href="#contact" class="bg-primary text-white px-4 py-2 rounded-full hover:bg-secondary transition-colors">Contact Us</a></li>
+    </ul>
+
+    <!-- Mobile hamburger -->
+    <button id="menuBtn" class="md:hidden p-2 rounded-lg text-gray-600 hover:bg-gray-100" aria-label="Toggle menu" aria-expanded="false">
+      <svg id="menuIcon" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+      </svg>
+    </button>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div id="mobileMenu" class="hidden md:hidden bg-white border-t border-gray-100 px-4 py-4">
+    <ul class="flex flex-col gap-4 text-sm font-medium">
+      <li><a href="#about" class="block text-gray-700 hover:text-primary py-1" onclick="closeMenu()">About</a></li>
+      <li><a href="#values" class="block text-gray-700 hover:text-primary py-1" onclick="closeMenu()">Our Values</a></li>
+      <li><a href="#services" class="block text-gray-700 hover:text-primary py-1" onclick="closeMenu()">Services</a></li>
+      <li><a href="#who-we-support" class="block text-gray-700 hover:text-primary py-1" onclick="closeMenu()">Who We Support</a></li>
+      <li><a href="#team" class="block text-gray-700 hover:text-primary py-1" onclick="closeMenu()">Team</a></li>
+      <li><a href="#contact" class="block bg-primary text-white text-center py-2 rounded-full" onclick="closeMenu()">Contact Us</a></li>
+    </ul>
+  </div>
+</header>
+
+<!-- ───── HERO ───── -->
+<section id="home" class="hero-gradient text-white py-20 md:py-32 px-4">
+  <div class="max-w-6xl mx-auto text-center">
+    <span class="inline-block bg-white bg-opacity-20 text-white text-sm font-medium px-4 py-1 rounded-full mb-6 tracking-wide uppercase">Love · Care · Share</span>
+    <h1 class="text-3xl sm:text-4xl md:text-6xl font-bold leading-tight mb-6">
+      Bringing <span class="text-accent">Hope</span>, Dignity<br class="hidden sm:block"/>& Support to Your Journey
+    </h1>
+    <p class="text-lg md:text-xl text-green-100 max-w-2xl mx-auto mb-10">
+      We are more than a service provider — we are a partner in your journey, offering a 360-degree approach to disability and injury support guided by genuine empathy and integrity.
+    </p>
+    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+      <a href="#services" class="bg-accent text-white font-semibold px-8 py-3 rounded-full hover:opacity-90 transition-opacity shadow-lg">Explore Our Services</a>
+      <a href="#contact" class="border-2 border-white text-white font-semibold px-8 py-3 rounded-full hover:bg-white hover:text-primary transition-colors">Get in Touch</a>
+    </div>
+  </div>
+</section>
+
+<!-- ───── TRUST BAR ───── -->
+<div class="bg-light border-y border-green-100 py-6 px-4">
+  <div class="max-w-6xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+    <div>
+      <div class="text-2xl font-bold text-primary">360°</div>
+      <div class="text-sm text-gray-600">Holistic Support</div>
+    </div>
+    <div>
+      <div class="text-2xl font-bold text-primary">All Ages</div>
+      <div class="text-sm text-gray-600">All Backgrounds</div>
+    </div>
+    <div>
+      <div class="text-2xl font-bold text-primary">ACC</div>
+      <div class="text-sm text-gray-600">& Private Funded</div>
+    </div>
+    <div>
+      <div class="text-2xl font-bold text-primary">4 Core</div>
+      <div class="text-sm text-gray-600">Services Offered</div>
+    </div>
+  </div>
+</div>
+
+<!-- ───── ABOUT ───── -->
+<section id="about" class="py-20 px-4">
+  <div class="max-w-6xl mx-auto">
+    <div class="grid md:grid-cols-2 gap-12 items-center">
+      <div>
+        <span class="text-secondary font-semibold text-sm uppercase tracking-wider">About Us</span>
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mt-2 mb-6">We See, Hear &amp; Walk Alongside Every Person We Serve</h2>
+        <p class="text-gray-600 text-lg leading-relaxed mb-6">
+          At the heart of our agency is a simple but powerful commitment: to bring hope, dignity, and practical support to those navigating life-changing injuries or disabilities.
+        </p>
+        <p class="text-gray-600 leading-relaxed mb-8">
+          We believe every person deserves to feel valued, capable, and supported to live their best life. Our approach starts with the very first conversation, moves through personalised solutions and coordinated support, and culminates in a successful, empowering transition toward a brighter future.
+        </p>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div class="bg-light rounded-xl p-5 border border-green-100">
+            <div class="text-2xl mb-2">🌟</div>
+            <h3 class="font-bold text-primary mb-1">Our Vision</h3>
+            <p class="text-sm text-gray-600">To restore hope, dignity, and independence to every individual we serve — helping people embrace their potential and step into a life filled with purpose and possibility.</p>
+          </div>
+          <div class="bg-light rounded-xl p-5 border border-green-100">
+            <div class="text-2xl mb-2">🤝</div>
+            <h3 class="font-bold text-primary mb-1">Our Mission</h3>
+            <p class="text-sm text-gray-600">To walk alongside clients with compassion, integrity, and wholehearted service — empowering individuals by providing holistic support, advocacy, and guidance.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Visual card -->
+      <div class="relative">
+        <div class="hero-gradient rounded-3xl p-8 text-white shadow-2xl">
+          <div class="text-5xl mb-4">💚</div>
+          <h3 class="text-2xl font-bold mb-4">Our Promise to You</h3>
+          <ul class="space-y-3 text-green-100">
+            <li class="flex items-start gap-3"><span class="text-accent mt-1">✓</span> Genuine empathy and unwavering integrity</li>
+            <li class="flex items-start gap-3"><span class="text-accent mt-1">✓</span> Personalised, culturally responsive support</li>
+            <li class="flex items-start gap-3"><span class="text-accent mt-1">✓</span> Safe, non-judgmental environment</li>
+            <li class="flex items-start gap-3"><span class="text-accent mt-1">✓</span> Collaboration and shared knowledge</li>
+            <li class="flex items-start gap-3"><span class="text-accent mt-1">✓</span> Continuous improvement through shared learnings</li>
+          </ul>
+        </div>
+        <div class="absolute -bottom-4 -right-4 w-24 h-24 bg-accent rounded-full opacity-20"></div>
+        <div class="absolute -top-4 -left-4 w-16 h-16 bg-secondary rounded-full opacity-20"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ───── CORE VALUES ───── -->
+<section id="values" class="bg-light py-20 px-4">
+  <div class="max-w-6xl mx-auto">
+    <div class="text-center mb-14">
+      <span class="text-secondary font-semibold text-sm uppercase tracking-wider">Our DNA</span>
+      <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mt-2 mb-4">Core Values That Guide Everything We Do</h2>
+      <p class="text-gray-600 max-w-xl mx-auto">These values are embedded into our team culture, client care standards, recruitment, training, and performance measures.</p>
+    </div>
+
+    <div class="grid md:grid-cols-3 gap-8">
+      <!-- Love -->
+      <div class="bg-white rounded-2xl p-8 shadow-sm card-hover border border-green-50">
+        <div class="value-icon bg-red-100 mb-5">❤️</div>
+        <h3 class="text-2xl font-bold text-primary mb-4">Love</h3>
+        <ul class="space-y-3 text-gray-600">
+          <li class="flex items-start gap-2"><span class="text-secondary mt-1 flex-shrink-0">•</span> Treat every client with compassion, empathy, and respect</li>
+          <li class="flex items-start gap-2"><span class="text-secondary mt-1 flex-shrink-0">•</span> Build genuine connections and trust</li>
+          <li class="flex items-start gap-2"><span class="text-secondary mt-1 flex-shrink-0">•</span> Provide a safe, non-judgmental environment for clients and whānau</li>
+        </ul>
+      </div>
+
+      <!-- Care -->
+      <div class="bg-white rounded-2xl p-8 shadow-sm card-hover border border-green-50">
+        <div class="value-icon bg-green-100 mb-5">🌿</div>
+        <h3 class="text-2xl font-bold text-primary mb-4">Care</h3>
+        <ul class="space-y-3 text-gray-600">
+          <li class="flex items-start gap-2"><span class="text-secondary mt-1 flex-shrink-0">•</span> Deliver high-quality, professional, and culturally responsive support</li>
+          <li class="flex items-start gap-2"><span class="text-secondary mt-1 flex-shrink-0">•</span> Prioritise client wellbeing, safety, and dignity</li>
+          <li class="flex items-start gap-2"><span class="text-secondary mt-1 flex-shrink-0">•</span> Go beyond minimum requirements to ensure clients receive the support they deserve</li>
+        </ul>
+      </div>
+
+      <!-- Share -->
+      <div class="bg-white rounded-2xl p-8 shadow-sm card-hover border border-green-50">
+        <div class="value-icon bg-yellow-100 mb-5">🤲</div>
+        <h3 class="text-2xl font-bold text-primary mb-4">Share</h3>
+        <ul class="space-y-3 text-gray-600">
+          <li class="flex items-start gap-2"><span class="text-secondary mt-1 flex-shrink-0">•</span> Share knowledge, resources, and support to empower clients</li>
+          <li class="flex items-start gap-2"><span class="text-secondary mt-1 flex-shrink-0">•</span> Share responsibility across the team — collaboration over competition</li>
+          <li class="flex items-start gap-2"><span class="text-secondary mt-1 flex-shrink-0">•</span> Share successes and learnings to continuously improve services</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ───── SERVICES ───── -->
+<section id="services" class="py-20 px-4">
+  <div class="max-w-6xl mx-auto">
+    <div class="text-center mb-14">
+      <span class="text-secondary font-semibold text-sm uppercase tracking-wider">What We Offer</span>
+      <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mt-2 mb-4">Our Services</h2>
+      <p class="text-gray-600 max-w-xl mx-auto">Comprehensive, person-centred support tailored to your individual needs and goals.</p>
+    </div>
+
+    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      <!-- Daily Living Support -->
+      <div class="bg-white rounded-2xl overflow-hidden shadow-sm card-hover border border-gray-100">
+        <div class="bg-gradient-to-br from-green-400 to-primary p-6 text-white text-center">
+          <div class="text-4xl mb-2">🏠</div>
+          <h3 class="font-bold text-lg">Daily Living Support</h3>
+        </div>
+        <div class="p-6">
+          <p class="text-gray-600 text-sm leading-relaxed mb-4">Compassionate carers and support workers providing assistance with day-to-day living.</p>
+          <ul class="space-y-2 text-sm text-gray-600">
+            <li class="flex items-center gap-2"><span class="w-2 h-2 bg-secondary rounded-full flex-shrink-0"></span>Home assistance</li>
+            <li class="flex items-center gap-2"><span class="w-2 h-2 bg-secondary rounded-full flex-shrink-0"></span>Community engagement</li>
+            <li class="flex items-center gap-2"><span class="w-2 h-2 bg-secondary rounded-full flex-shrink-0"></span>Respite care</li>
+            <li class="flex items-center gap-2"><span class="w-2 h-2 bg-secondary rounded-full flex-shrink-0"></span>Personal care support</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Physical Therapy -->
+      <div class="bg-white rounded-2xl overflow-hidden shadow-sm card-hover border border-gray-100">
+        <div class="bg-gradient-to-br from-blue-400 to-blue-600 p-6 text-white text-center">
+          <div class="text-4xl mb-2">💪</div>
+          <h3 class="font-bold text-lg">Physical Therapy</h3>
+        </div>
+        <div class="p-6">
+          <p class="text-gray-600 text-sm leading-relaxed mb-4">Expert physical rehabilitation to restore movement, function and confidence.</p>
+          <ul class="space-y-2 text-sm text-gray-600">
+            <li class="flex items-center gap-2"><span class="w-2 h-2 bg-blue-400 rounded-full flex-shrink-0"></span>Rehabilitation programs</li>
+            <li class="flex items-center gap-2"><span class="w-2 h-2 bg-blue-400 rounded-full flex-shrink-0"></span>Mobility improvement</li>
+            <li class="flex items-center gap-2"><span class="w-2 h-2 bg-blue-400 rounded-full flex-shrink-0"></span>Functional recovery</li>
+            <li class="flex items-center gap-2"><span class="w-2 h-2 bg-blue-400 rounded-full flex-shrink-0"></span>Strength & conditioning</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Occupational Therapy -->
+      <div class="bg-white rounded-2xl overflow-hidden shadow-sm card-hover border border-gray-100">
+        <div class="bg-gradient-to-br from-purple-400 to-purple-600 p-6 text-white text-center">
+          <div class="text-4xl mb-2">🔧</div>
+          <h3 class="font-bold text-lg">Occupational Therapy</h3>
+        </div>
+        <div class="p-6">
+          <p class="text-gray-600 text-sm leading-relaxed mb-4">Empowering independence through tailored assessments and practical solutions.</p>
+          <ul class="space-y-2 text-sm text-gray-600">
+            <li class="flex items-center gap-2"><span class="w-2 h-2 bg-purple-400 rounded-full flex-shrink-0"></span>Functional assessments</li>
+            <li class="flex items-center gap-2"><span class="w-2 h-2 bg-purple-400 rounded-full flex-shrink-0"></span>Home modifications</li>
+            <li class="flex items-center gap-2"><span class="w-2 h-2 bg-purple-400 rounded-full flex-shrink-0"></span>Adaptive equipment guidance</li>
+            <li class="flex items-center gap-2"><span class="w-2 h-2 bg-purple-400 rounded-full flex-shrink-0"></span>Independence planning</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Support Coordination -->
+      <div class="bg-white rounded-2xl overflow-hidden shadow-sm card-hover border border-gray-100">
+        <div class="bg-gradient-to-br from-accent to-orange-500 p-6 text-white text-center">
+          <div class="text-4xl mb-2">📋</div>
+          <h3 class="font-bold text-lg">Support Coordination</h3>
+        </div>
+        <div class="p-6">
+          <p class="text-gray-600 text-sm leading-relaxed mb-4">Navigating complex systems so you can focus on living your best life.</p>
+          <ul class="space-y-2 text-sm text-gray-600">
+            <li class="flex items-center gap-2"><span class="w-2 h-2 bg-accent rounded-full flex-shrink-0"></span>Personalised planning</li>
+            <li class="flex items-center gap-2"><span class="w-2 h-2 bg-accent rounded-full flex-shrink-0"></span>Advocacy & guidance</li>
+            <li class="flex items-center gap-2"><span class="w-2 h-2 bg-accent rounded-full flex-shrink-0"></span>Wellbeing monitoring</li>
+            <li class="flex items-center gap-2"><span class="w-2 h-2 bg-accent rounded-full flex-shrink-0"></span>Financial support navigation</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ───── WHO WE SUPPORT ───── -->
+<section id="who-we-support" class="bg-light py-20 px-4">
+  <div class="max-w-6xl mx-auto">
+    <div class="grid md:grid-cols-2 gap-12 items-center">
+      <div>
+        <span class="text-secondary font-semibold text-sm uppercase tracking-wider">Inclusivity</span>
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mt-2 mb-6">Who We Support</h2>
+        <p class="text-gray-600 text-lg leading-relaxed mb-8">
+          We support individuals of all ages and backgrounds across a wide range of conditions and challenges. Whether your needs are short-term or lifelong, we're here for every step of your journey.
+        </p>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+          {[
+            ["🧠", "Life-changing injuries"],
+            ["♿", "Long-term disabilities"],
+            ["🧬", "Neurological conditions (TBI, stroke, spinal injuries)"],
+            ["🧩", "Cognitive or behavioural challenges"],
+            ["🦽", "Mobility and functional limitations"],
+            ["⏱️", "Short-term & long-term care needs"],
+            ["📝", "ACC & private-funded clients"],
+            ["🌍", "All ages · All backgrounds · All journeys"]
+          ].map(([icon, text]) => `
+          <div class="flex items-start gap-3 bg-white rounded-xl p-4 shadow-sm border border-green-50">
+            <span class="text-2xl flex-shrink-0">${icon}</span>
+            <span class="text-sm text-gray-700 font-medium">${text}</span>
+          </div>`).join('')}
+        </div>
+      </div>
+      <div class="hero-gradient rounded-3xl p-8 text-white shadow-2xl">
+        <h3 class="text-2xl font-bold mb-6">Funding Options</h3>
+        <div class="space-y-4">
+          <div class="bg-white bg-opacity-15 rounded-xl p-5">
+            <h4 class="font-bold text-accent mb-1">ACC Funded</h4>
+            <p class="text-green-100 text-sm">We work with ACC-funded clients to ensure you receive the full support you're entitled to following an accident or injury.</p>
+          </div>
+          <div class="bg-white bg-opacity-15 rounded-xl p-5">
+            <h4 class="font-bold text-accent mb-1">Privately Funded</h4>
+            <p class="text-green-100 text-sm">Flexible private funding arrangements tailored to your circumstances and support needs.</p>
+          </div>
+          <div class="bg-white bg-opacity-15 rounded-xl p-5">
+            <h4 class="font-bold text-accent mb-1">Self-Referred</h4>
+            <p class="text-green-100 text-sm">You don't need a referral to get started. Contact us directly and we'll guide you through the process.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ───── TEAM ───── -->
+<section id="team" class="py-20 px-4">
+  <div class="max-w-6xl mx-auto">
+    <div class="text-center mb-14">
+      <span class="text-secondary font-semibold text-sm uppercase tracking-wider">Our People</span>
+      <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mt-2 mb-4">Meet the New Life Team</h2>
+      <p class="text-gray-600 max-w-xl mx-auto">A dedicated leadership team supported by passionate frontline workers — all committed to making a real difference in people's lives.</p>
+    </div>
+
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-10">
+      <!-- CEO -->
+      <div class="bg-white rounded-2xl p-6 shadow-sm card-hover border border-gray-100 text-center">
+        <div class="w-16 h-16 hero-gradient rounded-full flex items-center justify-center text-white text-2xl font-bold mx-auto mb-4">AM</div>
+        <h3 class="font-bold text-gray-900">Anaise Moonia</h3>
+        <p class="text-secondary text-sm font-medium mb-2">Chief Executive Officer (CEO)</p>
+        <p class="text-gray-500 text-sm">Leading the agency's vision with passion, purpose, and unwavering commitment to those we serve.</p>
+      </div>
+
+      <!-- Director -->
+      <div class="bg-white rounded-2xl p-6 shadow-sm card-hover border border-gray-100 text-center">
+        <div class="w-16 h-16 hero-gradient rounded-full flex items-center justify-center text-white text-2xl font-bold mx-auto mb-4">DP</div>
+        <h3 class="font-bold text-gray-900">Dennis Pesamino</h3>
+        <p class="text-secondary text-sm font-medium mb-2">Director</p>
+        <p class="text-gray-500 text-sm">Guiding strategic direction and ensuring the agency delivers on its promise to every client.</p>
+      </div>
+
+      <!-- GM -->
+      <div class="bg-white rounded-2xl p-6 shadow-sm card-hover border border-gray-100 text-center">
+        <div class="w-16 h-16 hero-gradient rounded-full flex items-center justify-center text-white text-2xl font-bold mx-auto mb-4">VM</div>
+        <h3 class="font-bold text-gray-900">Viliami Moli</h3>
+        <p class="text-secondary text-sm font-medium mb-2">General Manager</p>
+        <p class="text-gray-500 text-sm">Overseeing day-to-day operations and ensuring quality support delivery across all services.</p>
+      </div>
+
+      <!-- Senior Lead 1 -->
+      <div class="bg-white rounded-2xl p-6 shadow-sm card-hover border border-gray-100 text-center">
+        <div class="w-14 h-14 bg-purple-100 rounded-full flex items-center justify-center text-purple-600 text-xl font-bold mx-auto mb-4">AT</div>
+        <h3 class="font-bold text-gray-900">Anna Tuitalau</h3>
+        <p class="text-secondary text-sm font-medium mb-2">Senior Support Lead</p>
+      </div>
+
+      <!-- Senior Lead 2 -->
+      <div class="bg-white rounded-2xl p-6 shadow-sm card-hover border border-gray-100 text-center">
+        <div class="w-14 h-14 bg-blue-100 rounded-full flex items-center justify-center text-blue-600 text-xl font-bold mx-auto mb-4">JA</div>
+        <h3 class="font-bold text-gray-900">Joanna Alefaio</h3>
+        <p class="text-secondary text-sm font-medium mb-2">Senior Support Lead</p>
+      </div>
+
+      <!-- Clinical -->
+      <div class="bg-white rounded-2xl p-6 shadow-sm card-hover border border-gray-100 text-center">
+        <div class="w-14 h-14 bg-green-100 rounded-full flex items-center justify-center text-green-600 text-xl font-bold mx-auto mb-4">AP</div>
+        <h3 class="font-bold text-gray-900">Aiufilei Pesamino</h3>
+        <p class="text-secondary text-sm font-medium mb-2">Head of Compliance · Registered Nurse</p>
+      </div>
+    </div>
+
+    <!-- Frontline callout -->
+    <div class="bg-light rounded-2xl p-8 text-center border border-green-100">
+      <div class="text-3xl mb-3">👥</div>
+      <h3 class="text-xl font-bold text-primary mb-2">Our Frontline Team</h3>
+      <p class="text-gray-600 max-w-2xl mx-auto">Behind every successful outcome is a dedicated frontline team — reliable, respectful, and professional carers and support workers who show up every day with heart. Every team member follows our care standards, safeguarding policies, and is committed to client dignity and safety.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ───── WHY CHOOSE US ───── -->
+<section class="hero-gradient text-white py-20 px-4">
+  <div class="max-w-6xl mx-auto text-center">
+    <h2 class="text-3xl md:text-4xl font-bold mb-4">Why Choose New Life Support Agency?</h2>
+    <p class="text-green-100 max-w-xl mx-auto mb-12">We don't just provide a service — we build a partnership built on trust, respect and shared purpose.</p>
+    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div class="bg-white bg-opacity-10 rounded-2xl p-6 backdrop-blur-sm">
+        <div class="text-4xl mb-3">🎯</div>
+        <h3 class="font-bold mb-2">Person-Centred</h3>
+        <p class="text-green-100 text-sm">Every plan is tailored to your unique needs, goals, and cultural background.</p>
+      </div>
+      <div class="bg-white bg-opacity-10 rounded-2xl p-6 backdrop-blur-sm">
+        <div class="text-4xl mb-3">🛡️</div>
+        <h3 class="font-bold mb-2">Safe & Trusted</h3>
+        <p class="text-green-100 text-sm">Rigorous safety protocols, safeguarding policies, and qualified clinical oversight.</p>
+      </div>
+      <div class="bg-white bg-opacity-10 rounded-2xl p-6 backdrop-blur-sm">
+        <div class="text-4xl mb-3">🌏</div>
+        <h3 class="font-bold mb-2">Culturally Responsive</h3>
+        <p class="text-green-100 text-sm">We honour and respect the diverse backgrounds of every client and their whānau.</p>
+      </div>
+      <div class="bg-white bg-opacity-10 rounded-2xl p-6 backdrop-blur-sm">
+        <div class="text-4xl mb-3">📈</div>
+        <h3 class="font-bold mb-2">Quality Focused</h3>
+        <p class="text-green-100 text-sm">Continuous improvement through documented learnings, training, and performance review.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ───── CONTACT ───── -->
+<section id="contact" class="py-20 px-4 bg-white">
+  <div class="max-w-4xl mx-auto">
+    <div class="text-center mb-12">
+      <span class="text-secondary font-semibold text-sm uppercase tracking-wider">Get In Touch</span>
+      <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mt-2 mb-4">Start Your Journey With Us</h2>
+      <p class="text-gray-600 max-w-xl mx-auto">Whether you're a client, family member, or health professional, we'd love to hear from you. Our team is ready to listen and help.</p>
+    </div>
+
+    <div class="bg-light rounded-3xl p-8 md:p-10 border border-green-100">
+      <form id="contactForm" onsubmit="handleSubmit(event)" novalidate>
+        <div class="grid sm:grid-cols-2 gap-6 mb-6">
+          <div>
+            <label class="block text-sm font-medium text-gray-700 mb-1" for="name">Full Name *</label>
+            <input type="text" id="name" name="name" required placeholder="Your full name"
+              class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent text-sm" />
+          </div>
+          <div>
+            <label class="block text-sm font-medium text-gray-700 mb-1" for="email">Email Address *</label>
+            <input type="email" id="email" name="email" required placeholder="your@email.com"
+              class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent text-sm" />
+          </div>
+        </div>
+        <div class="grid sm:grid-cols-2 gap-6 mb-6">
+          <div>
+            <label class="block text-sm font-medium text-gray-700 mb-1" for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" placeholder="+64 xxx xxx xxxx"
+              class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent text-sm" />
+          </div>
+          <div>
+            <label class="block text-sm font-medium text-gray-700 mb-1" for="service">Service Interested In</label>
+            <select id="service" name="service"
+              class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent text-sm bg-white">
+              <option value="">Select a service...</option>
+              <option>Daily Living Support</option>
+              <option>Physical Therapy</option>
+              <option>Occupational Therapy</option>
+              <option>Support Coordination</option>
+              <option>General Enquiry</option>
+            </select>
+          </div>
+        </div>
+        <div class="mb-6">
+          <label class="block text-sm font-medium text-gray-700 mb-1" for="message">Message *</label>
+          <textarea id="message" name="message" rows="4" required placeholder="Tell us a little about yourself and how we can support you..."
+            class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent text-sm resize-none"></textarea>
+        </div>
+        <div id="formMsg" class="hidden mb-4 text-center text-sm font-medium text-primary bg-green-50 rounded-xl py-3 px-4"></div>
+        <button type="submit"
+          class="w-full hero-gradient text-white font-semibold py-4 rounded-xl hover:opacity-90 transition-opacity shadow-lg text-base">
+          Send Message →
+        </button>
+        <p class="text-center text-xs text-gray-400 mt-3">We respect your privacy and will never share your information.</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ───── FOOTER ───── -->
+<footer class="bg-gray-900 text-gray-300 py-12 px-4">
+  <div class="max-w-6xl mx-auto">
+    <div class="grid sm:grid-cols-2 md:grid-cols-4 gap-8 mb-10">
+      <div class="sm:col-span-2 md:col-span-1">
+        <div class="flex items-center gap-3 mb-4">
+          <div class="w-10 h-10 rounded-full hero-gradient flex items-center justify-center text-white font-bold">NL</div>
+          <div>
+            <div class="font-bold text-white text-sm">New Life Support Agency</div>
+            <div class="text-xs text-gray-400">Love · Care · Share</div>
+          </div>
+        </div>
+        <p class="text-sm text-gray-400 leading-relaxed">Bringing hope, dignity and practical support to those navigating life-changing injuries or disabilities.</p>
+      </div>
+
+      <div>
+        <h4 class="font-semibold text-white mb-4">Services</h4>
+        <ul class="space-y-2 text-sm">
+          <li><a href="#services" class="hover:text-white transition-colors">Daily Living Support</a></li>
+          <li><a href="#services" class="hover:text-white transition-colors">Physical Therapy</a></li>
+          <li><a href="#services" class="hover:text-white transition-colors">Occupational Therapy</a></li>
+          <li><a href="#services" class="hover:text-white transition-colors">Support Coordination</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="font-semibold text-white mb-4">Agency</h4>
+        <ul class="space-y-2 text-sm">
+          <li><a href="#about" class="hover:text-white transition-colors">About Us</a></li>
+          <li><a href="#values" class="hover:text-white transition-colors">Our Values</a></li>
+          <li><a href="#team" class="hover:text-white transition-colors">Our Team</a></li>
+          <li><a href="#who-we-support" class="hover:text-white transition-colors">Who We Support</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="font-semibold text-white mb-4">Contact</h4>
+        <ul class="space-y-2 text-sm">
+          <li class="flex items-center gap-2">📧 <a href="mailto:info@newlifesupportagency.co.nz" class="hover:text-white transition-colors">info@newlifesupportagency.co.nz</a></li>
+          <li class="flex items-center gap-2">📞 <span>0800 NEW LIFE</span></li>
+          <li class="flex items-center gap-2">📍 <span>New Zealand</span></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="border-t border-gray-700 pt-6 flex flex-col sm:flex-row justify-between items-center gap-4 text-xs text-gray-500">
+      <p>© 2025 New Life Support Agency. All rights reserved.</p>
+      <p>Guided by <span class="text-secondary">Love, Care &amp; Share</span></p>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Mobile menu toggle
+  const menuBtn = document.getElementById('menuBtn');
+  const mobileMenu = document.getElementById('mobileMenu');
+  menuBtn.addEventListener('click', () => {
+    const isHidden = mobileMenu.classList.contains('hidden');
+    mobileMenu.classList.toggle('hidden', !isHidden);
+    menuBtn.setAttribute('aria-expanded', String(isHidden));
+  });
+  function closeMenu() {
+    mobileMenu.classList.add('hidden');
+    menuBtn.setAttribute('aria-expanded', 'false');
+  }
+
+  // Smooth close on outside click
+  document.addEventListener('click', (e) => {
+    if (!menuBtn.contains(e.target) && !mobileMenu.contains(e.target)) {
+      closeMenu();
+    }
+  });
+
+  // Contact form
+  function handleSubmit(e) {
+    e.preventDefault();
+    const msg = document.getElementById('formMsg');
+    msg.textContent = '✅ Thank you! Your message has been sent. We\'ll be in touch shortly.';
+    msg.classList.remove('hidden');
+    e.target.reset();
+    setTimeout(() => msg.classList.add('hidden'), 6000);
+  }
+
+  // Intersection Observer for fade-in on scroll
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.style.opacity = '1';
+        e.target.style.transform = 'translateY(0)';
+      }
+    });
+  }, { threshold: 0.1 });
+
+  document.querySelectorAll('section').forEach(section => {
+    section.style.opacity = '0';
+    section.style.transform = 'translateY(20px)';
+    section.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+    observer.observe(section);
+  });
+</script>
+<script>window.parent.postMessage({ action: "ready" }, "*"); 
+ 
+window.console = new Proxy(console, {
+  get(target, prop) {
+    if (['log', 'warn', 'error'].includes(prop)) {
+      return new Proxy(target[prop], {
+        apply(fn, thisArg, args) {
+          fn.apply(thisArg, args);
+          window.parent.postMessage({ action: 'console', 
+            type: prop, 
+            args: args.map((arg) => {
+              try {
+                return JSON.stringify(arg).replace(/^["']|["']$/g, '');
+              } catch (e) {
+                return arg;
+              }
+            }) 
+          }, '*');
+        }
+      });
+    }
+    return target[prop];
+  }
+});
+</script></body>
+</html>
