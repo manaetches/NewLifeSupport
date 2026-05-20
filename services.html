@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Our Services | New Life Support Agency</title>
+  <meta name="description" content="Daily living support, physical therapy, occupational therapy, and support coordination — New Life Support Agency's full range of disability and injury support services." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://www.newlifesupportagency.co.nz/services.html" />
+  <meta property="og:title" content="Our Services | New Life Support Agency" />
+  <meta property="og:description" content="Comprehensive, person-centred support tailored to your individual needs and goals." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.newlifesupportagency.co.nz/services.html" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary:   '#a8325a',   // your crimson, pulled back
+            secondary: '#d4705c',   // your orange-red, softened
+            accent:    '#e8a030',   // your amber, slightly muted
+            light:     '#fdf2f5',   // unchanged
+          },
+          fontFamily: { sans: ['Inter', 'system-ui', 'sans-serif'] }
+        }
+      }
+    }
+  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="font-sans text-gray-800 bg-white">
+
+<!-- ───── NAVIGATION ───── -->
+<header class="sticky top-0 z-50 bg-white shadow-md">
+  <nav class="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between" role="navigation" aria-label="Main navigation">
+    <a href="index.html" class="flex items-center gap-3" aria-label="New Life Support Agency home">
+      <img src="../images/logo.png" alt="New Life Support Agency" class="w-10 h-10 rounded-full object-cover" />
+      <div>
+        <div class="font-bold text-primary leading-tight text-sm sm:text-base">New Life</div>
+        <div class="text-xs text-gray-500 leading-tight">Support Agency</div>
+      </div>
+    </a>
+    <ul class="hidden md:flex items-center gap-6 text-sm font-medium">
+      <li><a href="about.html" class="nav-link text-gray-600 hover:text-primary">About</a></li>
+      <li><a href="about.html#values" class="nav-link text-gray-600 hover:text-primary">Our Values</a></li>
+      <li><a href="services.html" class="nav-link text-primary font-semibold">Services</a></li>
+      <li><a href="services.html#who-we-support" class="nav-link text-gray-600 hover:text-primary">Who We Support</a></li>
+      <li><a href="about.html#team" class="nav-link text-gray-600 hover:text-primary">Team</a></li>
+      <li><a href="contact.html" class="bg-primary text-white px-4 py-2 rounded-full hover:bg-secondary transition-colors">Contact Us</a></li>
+    </ul>
+    <button id="menuBtn" class="md:hidden p-2 rounded-lg text-gray-600 hover:bg-gray-100" aria-label="Toggle menu" aria-expanded="false">
+      <svg id="menuIcon" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+      </svg>
+    </button>
+  </nav>
+  <div id="mobileMenu" class="hidden md:hidden bg-white border-t border-gray-100 px-4 py-4">
+    <ul class="flex flex-col gap-4 text-sm font-medium">
+      <li><a href="about.html" class="block text-gray-700 hover:text-primary py-1" onclick="closeMenu()">About</a></li>
+      <li><a href="about.html#values" class="block text-gray-700 hover:text-primary py-1" onclick="closeMenu()">Our Values</a></li>
+      <li><a href="services.html" class="block text-primary font-semibold py-1" onclick="closeMenu()">Services</a></li>
+      <li><a href="services.html#who-we-support" class="block text-gray-700 hover:text-primary py-1" onclick="closeMenu()">Who We Support</a></li>
+      <li><a href="about.html#team" class="block text-gray-700 hover:text-primary py-1" onclick="closeMenu()">Team</a></li>
+      <li><a href="contact.html" class="block bg-primary text-white text-center py-2 rounded-full" onclick="closeMenu()">Contact Us</a></li>
+    </ul>
+  </div>
+</header>
+
+<!-- ───── PAGE HERO ───── -->
+<div class="hero-gradient text-white py-14 px-4 text-center">
+  <span class="inline-block bg-white bg-opacity-20 text-white text-sm font-medium px-4 py-1 rounded-full mb-4 tracking-wide uppercase">What We Offer</span>
+  <h1 class="text-3xl md:text-5xl font-bold">Our Services</h1>
+  <p class="mt-4 text-green-100 max-w-xl mx-auto">Comprehensive, person-centred support tailored to your individual needs and goals.</p>
+</div>
+
+<!-- ───── SERVICES ───── -->
+<section id="services" class="py-20 px-4">
+  <div class="max-w-6xl mx-auto">
+    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      <!-- Daily Living Support -->
+      <div class="bg-white rounded-2xl overflow-hidden shadow-sm card-hover border border-gray-100">
+        <div class="bg-gradient-to-br from-green-400 to-primary p-6 text-white text-center">
+          <div class="text-4xl mb-2">🏠</div>
+          <h3 class="font-bold text-lg">Daily Living Support</h3>
+        </div>
+        <div class="p-6">
+          <p class="text-gray-600 text-sm leading-relaxed mb-4">Compassionate carers and support workers providing assistance with day-to-day living.</p>
+          <ul class="space-y-2 text-sm text-gray-600">
+            <li class="flex items-center gap-2"><span class="w-2 h-2 bg-secondary rounded-full flex-shrink-0"></span>Home assistance</li>
+            <li class="flex items-center gap-2"><span class="w-2 h-2 bg-secondary rounded-full flex-shrink-0"></span>Community engagement</li>
+            <li class="flex items-center gap-2"><span class="w-2 h-2 bg-secondary rounded-full flex-shrink-0"></span>Respite care</li>
+            <li class="flex items-center gap-2"><span class="w-2 h-2 bg-secondary rounded-full flex-shrink-0"></span>Personal care support</li>
+          </ul>
+        </div>
+      </div>
+      <!-- Physical Therapy -->
+      <div class="bg-white rounded-2xl overflow-hidden shadow-sm card-hover border border-gray-100">
+        <div class="bg-gradient-to-br from-blue-400 to-blue-600 p-6 text-white text-center">
+          <div class="text-4xl mb-2">💪</div>
+          <h3 class="font-bold text-lg">Physical Therapy</h3>
+        </div>
+        <div class="p-6">
+          <p class="text-gray-600 text-sm leading-relaxed mb-4">Expert physical rehabilitation to restore movement, function and confidence.</p>
+          <ul class="space-y-2 text-sm text-gray-600">
+            <li class="flex items-center gap-2"><span class="w-2 h-2 bg-blue-400 rounded-full flex-shrink-0"></span>Rehabilitation programs</li>
+            <li class="flex items-center gap-2"><span class="w-2 h-2 bg-blue-400 rounded-full flex-shrink-0"></span>Mobility improvement</li>
+            <li class="flex items-center gap-2"><span class="w-2 h-2 bg-blue-400 rounded-full flex-shrink-0"></span>Functional recovery</li>
+            <li class="flex items-center gap-2"><span class="w-2 h-2 bg-blue-400 rounded-full flex-shrink-0"></span>Strength &amp; conditioning</li>
+          </ul>
+        </div>
+      </div>
+      <!-- Occupational Therapy -->
+      <div class="bg-white rounded-2xl overflow-hidden shadow-sm card-hover border border-gray-100">
+        <div class="bg-gradient-to-br from-purple-400 to-purple-600 p-6 text-white text-center">
+          <div class="text-4xl mb-2">🔧</div>
+          <h3 class="font-bold text-lg">Occupational Therapy</h3>
+        </div>
+        <div class="p-6">
+          <p class="text-gray-600 text-sm leading-relaxed mb-4">Empowering independence through tailored assessments and practical solutions.</p>
+          <ul class="space-y-2 text-sm text-gray-600">
+            <li class="flex items-center gap-2"><span class="w-2 h-2 bg-purple-400 rounded-full flex-shrink-0"></span>Functional assessments</li>
+            <li class="flex items-center gap-2"><span class="w-2 h-2 bg-purple-400 rounded-full flex-shrink-0"></span>Home modifications</li>
+            <li class="flex items-center gap-2"><span class="w-2 h-2 bg-purple-400 rounded-full flex-shrink-0"></span>Adaptive equipment guidance</li>
+            <li class="flex items-center gap-2"><span class="w-2 h-2 bg-purple-400 rounded-full flex-shrink-0"></span>Independence planning</li>
+          </ul>
+        </div>
+      </div>
+      <!-- Support Coordination -->
+      <div class="bg-white rounded-2xl overflow-hidden shadow-sm card-hover border border-gray-100">
+        <div class="bg-gradient-to-br from-accent to-orange-500 p-6 text-white text-center">
+          <div class="text-4xl mb-2">📋</div>
+          <h3 class="font-bold text-lg">Support Coordination</h3>
+        </div>
+        <div class="p-6">
+          <p class="text-gray-600 text-sm leading-relaxed mb-4">Navigating complex systems so you can focus on living your best life.</p>
+          <ul class="space-y-2 text-sm text-gray-600">
+            <li class="flex items-center gap-2"><span class="w-2 h-2 bg-accent rounded-full flex-shrink-0"></span>Personalised planning</li>
+            <li class="flex items-center gap-2"><span class="w-2 h-2 bg-accent rounded-full flex-shrink-0"></span>Advocacy &amp; guidance</li>
+            <li class="flex items-center gap-2"><span class="w-2 h-2 bg-accent rounded-full flex-shrink-0"></span>Wellbeing monitoring</li>
+            <li class="flex items-center gap-2"><span class="w-2 h-2 bg-accent rounded-full flex-shrink-0"></span>Financial support navigation</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ───── WHO WE SUPPORT ───── -->
+<section id="who-we-support" class="bg-light py-20 px-4">
+  <div class="max-w-6xl mx-auto">
+    <div class="grid md:grid-cols-2 gap-12 items-center">
+      <div>
+        <span class="text-secondary font-semibold text-sm uppercase tracking-wider">Inclusivity</span>
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mt-2 mb-6">Who We Support</h2>
+        <p class="text-gray-600 text-lg leading-relaxed mb-8">
+          We support individuals of all ages and backgrounds across a wide range of conditions and challenges. Whether your needs are short-term or lifelong, we're here for every step of your journey.
+        </p>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+          <div class="flex items-start gap-3 bg-white rounded-xl p-4 shadow-sm border border-green-50">
+            <span class="text-2xl flex-shrink-0">🧠</span>
+            <span class="text-sm text-gray-700 font-medium">Life-changing injuries</span>
+          </div>
+          <div class="flex items-start gap-3 bg-white rounded-xl p-4 shadow-sm border border-green-50">
+            <span class="text-2xl flex-shrink-0">♿</span>
+            <span class="text-sm text-gray-700 font-medium">Long-term disabilities</span>
+          </div>
+          <div class="flex items-start gap-3 bg-white rounded-xl p-4 shadow-sm border border-green-50">
+            <span class="text-2xl flex-shrink-0">🧬</span>
+            <span class="text-sm text-gray-700 font-medium">Neurological conditions (TBI, stroke, spinal injuries)</span>
+          </div>
+          <div class="flex items-start gap-3 bg-white rounded-xl p-4 shadow-sm border border-green-50">
+            <span class="text-2xl flex-shrink-0">🧩</span>
+            <span class="text-sm text-gray-700 font-medium">Cognitive or behavioural challenges</span>
+          </div>
+          <div class="flex items-start gap-3 bg-white rounded-xl p-4 shadow-sm border border-green-50">
+            <span class="text-2xl flex-shrink-0">🦽</span>
+            <span class="text-sm text-gray-700 font-medium">Mobility and functional limitations</span>
+          </div>
+          <div class="flex items-start gap-3 bg-white rounded-xl p-4 shadow-sm border border-green-50">
+            <span class="text-2xl flex-shrink-0">⏱️</span>
+            <span class="text-sm text-gray-700 font-medium">Short-term &amp; long-term care needs</span>
+          </div>
+          <div class="flex items-start gap-3 bg-white rounded-xl p-4 shadow-sm border border-green-50">
+            <span class="text-2xl flex-shrink-0">📝</span>
+            <span class="text-sm text-gray-700 font-medium">ACC &amp; private-funded clients</span>
+          </div>
+          <div class="flex items-start gap-3 bg-white rounded-xl p-4 shadow-sm border border-green-50">
+            <span class="text-2xl flex-shrink-0">🌍</span>
+            <span class="text-sm text-gray-700 font-medium">All ages · All backgrounds · All journeys</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero-gradient rounded-3xl p-8 text-white shadow-2xl">
+        <h3 class="text-2xl font-bold mb-6">Funding Options</h3>
+        <div class="space-y-4">
+          <div class="bg-white bg-opacity-15 rounded-xl p-5">
+            <h4 class="font-bold text-accent mb-1">ACC Funded</h4>
+            <p class="text-green-100 text-sm">We work with ACC-funded clients to ensure you receive the full support you're entitled to following an accident or injury.</p>
+          </div>
+          <div class="bg-white bg-opacity-15 rounded-xl p-5">
+            <h4 class="font-bold text-accent mb-1">Privately Funded</h4>
+            <p class="text-green-100 text-sm">Flexible private funding arrangements tailored to your circumstances and support needs.</p>
+          </div>
+          <div class="bg-white bg-opacity-15 rounded-xl p-5">
+            <h4 class="font-bold text-accent mb-1">Self-Referred</h4>
+            <p class="text-green-100 text-sm">You don't need a referral to get started. Contact us directly and we'll guide you through the process.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ───── FOOTER ───── -->
+<footer class="bg-gray-900 text-gray-300 py-12 px-4">
+  <div class="max-w-6xl mx-auto">
+    <div class="grid sm:grid-cols-2 md:grid-cols-4 gap-8 mb-10">
+      <div class="sm:col-span-2 md:col-span-1">
+        <div class="flex items-center gap-3 mb-4">
+          <img src="../images/logo.png" alt="New Life Support Agency" class="h-12 w-auto object-contain" />
+          <div>
+            <div class="font-bold text-white text-sm">New Life Support Agency</div>
+            <div class="text-xs text-gray-400">Love · Care · Share</div>
+          </div>
+        </div>
+        <p class="text-sm text-gray-400 leading-relaxed">Bringing hope, dignity and practical support to those navigating life-changing injuries or disabilities.</p>
+      </div>
+      <div>
+        <h4 class="font-semibold text-white mb-4">Services</h4>
+        <ul class="space-y-2 text-sm">
+          <li><a href="services.html" class="hover:text-white transition-colors">Daily Living Support</a></li>
+          <li><a href="services.html" class="hover:text-white transition-colors">Physical Therapy</a></li>
+          <li><a href="services.html" class="hover:text-white transition-colors">Occupational Therapy</a></li>
+          <li><a href="services.html" class="hover:text-white transition-colors">Support Coordination</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-semibold text-white mb-4">Agency</h4>
+        <ul class="space-y-2 text-sm">
+          <li><a href="about.html" class="hover:text-white transition-colors">About Us</a></li>
+          <li><a href="about.html#values" class="hover:text-white transition-colors">Our Values</a></li>
+          <li><a href="about.html#team" class="hover:text-white transition-colors">Our Team</a></li>
+          <li><a href="services.html#who-we-support" class="hover:text-white transition-colors">Who We Support</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-semibold text-white mb-4">Contact</h4>
+        <ul class="space-y-2 text-sm">
+          <li class="flex items-center gap-2">📧 <a href="mailto:info@newlifesupportagency.co.nz" class="hover:text-white transition-colors">info@newlifesupportagency.co.nz</a></li>
+          <li class="flex items-center gap-2">📞 <span>0800 NEW LIFE</span></li>
+          <li class="flex items-start gap-2">📍 <span>43 Galway Street, Onehunga, Auckland</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="border-t border-gray-700 pt-6 flex flex-col sm:flex-row justify-between items-center gap-4 text-xs text-gray-500">
+      <p>© 2025 New Life Support Agency. All rights reserved.</p>
+      <p>Guided by <span class="text-secondary">Love, Care &amp; Share</span></p>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
