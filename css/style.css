@@ -32,3 +32,24 @@ html {
   border-radius: 50%;
   font-size: 1.75rem;
 }
+
+.policy-list {
+  list-style: none;
+  display: grid;
+  gap: 0.75rem;
+  color: #4b5563;
+}
+
+.policy-list li {
+  position: relative;
+  padding-left: 1.5rem;
+  line-height: 1.65;
+}
+
+.policy-list li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #d4705c;
+  font-weight: 700;
+}
