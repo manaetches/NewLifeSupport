@@ -2,14 +2,24 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="apple-touch-icon" sizes="180x180" href="images/favicon_io/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon_io/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon_io/favicon-16x16.png">
+  <link rel="shortcut icon" href="images/favicon_io/favicon.ico">
+  <link rel="manifest" href="images/favicon_io/site.webmanifest">
   <title>Staff Profiles | New Life Support Agency</title>
   <meta name="description" content="Meet the people behind New Life Support Agency and learn about their experience, values and passion for supporting families." />
+  <link rel="canonical" href="https://www.newlifesupportagency.co.nz/staff-bios.html" />
+  <meta property="og:title" content="Staff Profiles | New Life Support Agency" />
+  <meta property="og:description" content="Meet the people behind New Life Support Agency and learn about their experience, values and passion for supporting families." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.newlifesupportagency.co.nz/staff-bios.html" />
   <link rel="stylesheet" href="css/style.css" /><script src="https://cdn.tailwindcss.com"></script>
   <script>tailwind.config={theme:{extend:{colors:{primary:'#a8325a',secondary:'#d4705c',accent:'#e8a030',light:'#fdf2f5'},fontFamily:{sans:['Inter','system-ui','sans-serif']}}}}</script>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
 </head>
 <body class="font-sans text-gray-800 bg-white">
-<header class="sticky top-0 z-50 bg-white shadow-md"><nav class="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between"><a href="index.html" class="flex items-center gap-3"><img src="images/logo.png" alt="New Life Support Agency" class="h-12 w-auto" /><span><strong class="block text-primary">New Life</strong><small class="text-gray-500">Support Agency</small></span></a><div class="hidden md:flex items-center gap-6 text-sm font-medium"><a href="about.html" class="text-gray-600 hover:text-primary">About</a><a href="services.html" class="text-gray-600 hover:text-primary">Services</a><a href="testimonies.html" class="text-gray-600 hover:text-primary">Client Stories</a><a href="contact.html" class="bg-primary text-white px-4 py-2 rounded-full">Contact Us</a></div></nav></header>
+<header class="sticky top-0 z-50 bg-white shadow-md"><nav class="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between"><a href="index.html" class="flex items-center gap-3"><img src="images/logo.png" alt="New Life Support Agency" class="h-12 w-auto" /><span><strong class="block text-primary">New Life</strong><small class="text-gray-500">Support Agency</small></span></a><div class="hidden md:flex items-center gap-6 text-sm font-medium"><a href="about.html" class="text-gray-600 hover:text-primary">About</a><a href="services.html" class="text-gray-600 hover:text-primary">Services</a><a href="staff-bios.html" class="text-gray-600 hover:text-primary">Our Team</a><a href="testimonies.html" class="text-gray-600 hover:text-primary">Client Stories</a><a href="contact.html" class="bg-primary text-white px-4 py-2 rounded-full">Contact Us</a></div><button id="menuBtn" class="md:hidden p-2 rounded-lg text-gray-600 hover:bg-gray-100" aria-label="Toggle menu" aria-expanded="false"><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg></button></nav><div id="mobileMenu" class="hidden md:hidden bg-white border-t border-gray-100 px-4 py-4"><ul class="flex flex-col gap-3 text-sm font-medium"><li><a href="about.html" class="block py-1 text-gray-700 hover:text-primary" onclick="closeMenu()">About</a></li><li><a href="services.html" class="block py-1 text-gray-700 hover:text-primary" onclick="closeMenu()">Services</a></li><li><a href="staff-bios.html" class="block py-1 text-gray-700 hover:text-primary" onclick="closeMenu()">Our Team</a></li><li><a href="testimonies.html" class="block py-1 text-gray-700 hover:text-primary" onclick="closeMenu()">Client Stories</a></li><li><a href="child-safety.html" class="block py-1 text-gray-700 hover:text-primary" onclick="closeMenu()">Child Safety</a></li><li><a href="privacy.html" class="block py-1 text-gray-700 hover:text-primary" onclick="closeMenu()">Privacy</a></li><li><a href="contact.html" class="block bg-primary text-white text-center py-2 rounded-full" onclick="closeMenu()">Contact Us</a></li></ul></div></header>
 <div class="hero-gradient text-white py-14 px-4 text-center"><span class="inline-block bg-white bg-opacity-20 text-sm px-4 py-1 rounded-full mb-4 uppercase tracking-wide">Our People</span><h1 class="text-3xl md:text-5xl font-bold">Meet the New Life Team</h1><p class="mt-4 text-green-100 max-w-2xl mx-auto">The people behind our Love, Care &amp; Share approach.</p></div>
 <main class="max-w-6xl mx-auto px-4 py-16"><div id="bios" class="grid md:grid-cols-2 gap-8"><p class="text-gray-500">Loading staff profilesâ€¦</p></div></main>
 <section class="px-4 py-10 bg-white" aria-label="New Life Support Agency">
@@ -59,11 +69,11 @@
       <div>
         <h4 class="font-semibold text-white mb-4">Contact</h4>
         <ul class="space-y-2 text-sm">
-          <li class="flex items-center gap-2">ðŸ“§ <a href="mailto:dennis@newlifesupport.co.nz" class="hover:text-white transition-colors">dennis@newlifesupport.co.nz</a></li>
-          <li class="flex items-center gap-2">ðŸ“ž <a href="tel:+6421915313" class="hover:text-white transition-colors">+64 21 915 313</a></li>
-          <li class="flex items-start gap-2">ðŸ“ <span>43 Galway Street, Onehunga, Auckland 1061</span></li>
-          <li class="flex items-center gap-2">â“• <a href="https://www.facebook.com/profile.php?id=61595209352074" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors">Facebook</a></li>
-          <li class="flex items-center gap-2">in <a href="https://www.linkedin.com/company/new-life-support-agency-limited/home/?viewAsMember=true" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors">LinkedIn</a></li>
+          <li class="flex items-center gap-2">&#x1F4E7; <a href="mailto:dennis@newlifesupport.co.nz" class="hover:text-white transition-colors">dennis@newlifesupport.co.nz</a></li>
+          <li class="flex items-center gap-2">&#x1F4DE; <a href="tel:+6421915313" class="hover:text-white transition-colors">+64 21 915 313</a></li>
+          <li class="flex items-start gap-2">&#x1F4CD; <span>43 Galway Street, Onehunga, Auckland 1061</span></li>
+          <li class="flex items-center gap-2"><svg class="w-4 h-4 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 8h3V5h-3c-2.2 0-4 1.8-4 4v2H8v3h2v6h3v-6h3l1-3h-4V9c0-.6.4-1 1-1z"/></svg><a href="https://www.facebook.com/profile.php?id=61595209352074" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors">Facebook</a></li>
+          <li class="flex items-center gap-2"><svg class="w-4 h-4 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M6.5 8.5A1.5 1.5 0 1 0 6.5 5a1.5 1.5 0 0 0 0 3.5zM5 10h3v9H5v-9zm5 0h2.9v1.2h.1c.4-.8 1.4-1.7 3-1.7 3.2 0 3.8 2.1 3.8 4.8V19h-3v-4.2c0-1 0-2.3-1.4-2.3s-1.6 1.1-1.6 2.2V19h-3v-9z"/></svg><a href="https://www.linkedin.com/company/new-life-support-agency-limited/home/?viewAsMember=true" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors">LinkedIn</a></li>
         </ul>
       </div>
     </div>
@@ -141,5 +151,6 @@ fetch('staffs-bio.md').then(response => {
   console.error(error);
 });
 </script>
+<script src="js/main.js"></script>
 </body>
 </html>
