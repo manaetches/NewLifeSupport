@@ -89,17 +89,40 @@ fetch('staffs-bio.md').then(response => {
     "Aiufilei Tupa'i": 'Aiufilei Pesamino.png',
     'Anna Marie Tuitalau': 'Anna Marie Tuitalau.png',
     'Charlotte Liu Tevi': 'Liu Tevi.png',
-    'Dennis Pesamino': null,
+    'Dennis Pesamino': 'Dennis Pesamino.jpeg',
     'Nayar Noia Fuimaono': 'Nayar Naoia Fuimaono.png'
   };
   const staffRoles = {
-    'Dennis Pesamino': 'Director'
+    'Anaise Oliana Moonia': 'Chief Executive Officer (CEO)',
+    'Dennis Pesamino': 'Director',
+    'Nayar Noia Fuimaono': 'Head of Compliance',
+    'Viliami Moli': 'General Manager',
+    "Aiufilei Tupa'i": 'Clinical Lead · Registered Nurse',
+    'Charlotte Liu Tevi': 'ACC Coordinator',
+    'Anna Marie Tuitalau': 'Senior Support Lead · Acquisition Lead',
+    'Joanna Alefaio': 'Senior Support Lead',
+    'Lynn Alefosio': 'Support Worker',
+    'Litiuingi Sanalio': 'Support Worker',
+    'Sepo Lenati': 'Support Worker'
   };
+  const staffHierarchy = [
+    'Anaise Oliana Moonia',
+    'Dennis Pesamino',
+    'Nayar Noia Fuimaono',
+    'Viliami Moli',
+    "Aiufilei Tupa'i",
+    'Charlotte Liu Tevi',
+    'Anna Marie Tuitalau',
+    'Joanna Alefaio',
+    'Lynn Alefosio',
+    'Litiuingi Sanalio',
+    'Sepo Lenati'
+  ];
   const bios = text.trim().split(/\n\s*\n/);
   bios.sort((first, second) => {
-    const firstIsDennis = first.startsWith('Dennis Pesamino-');
-    const secondIsDennis = second.startsWith('Dennis Pesamino-');
-    return Number(secondIsDennis) - Number(firstIsDennis);
+    const firstName = first.slice(0, first.indexOf('-')).trim();
+    const secondName = second.slice(0, second.indexOf('-')).trim();
+    return staffHierarchy.indexOf(firstName) - staffHierarchy.indexOf(secondName);
   });
   container.innerHTML = bios.map((bio, index) => {
     const separator = bio.indexOf('-');
@@ -120,4 +143,3 @@ fetch('staffs-bio.md').then(response => {
 </script>
 </body>
 </html>
-
