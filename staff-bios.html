@@ -141,10 +141,10 @@ fetch('staffs-bio.md').then(response => {
     const photo = staffPhotos[name];
     const initials = name.split(/\s+/).map(word => word[0]).slice(0, 2).join('');
     const photoMarkup = photo
-      ? `<img src="images/companyphotos/${encodeURIComponent(photo)}" alt="${name}" class="w-full h-64 object-contain bg-white" />`
+      ? `<img src="images/companyphotos/${encodeURIComponent(photo)}" alt="${name}" class="h-64 max-w-full mx-auto object-contain rounded-[10px]" style="height: 16rem; max-width: 100%; margin: 0 auto; border-radius: 10px; display: block;" />`
       : `<div class="h-64 hero-gradient flex items-center justify-center text-white text-5xl font-bold" aria-label="${name} profile placeholder">${initials}</div>`;
     const roleMarkup = staffRoles[name] ? `<p class="text-secondary text-sm font-semibold mb-4">${staffRoles[name]}</p>` : '';
-    return `<article class="bg-light rounded-2xl overflow-hidden border border-green-100 card-hover"><div>${photoMarkup}</div><div class="p-8"><h2 class="text-xl font-bold text-primary mb-2">${name}</h2>${roleMarkup}<p class="text-gray-600 leading-relaxed">${story}</p></div></article>`;
+    return `<article class="bg-light rounded-2xl overflow-hidden border border-green-100 card-hover"><div class="rounded-[10px] overflow-hidden">${photoMarkup}</div><div class="p-8"><h2 class="text-xl font-bold text-primary mb-2">${name}</h2>${roleMarkup}<p class="text-gray-600 leading-relaxed">${story}</p></div></article>`;
   }).join('');
 }).catch(error => {
   document.getElementById('bios').innerHTML = '<p class="text-gray-600">Staff profiles are temporarily unavailable. Please contact our office for more information.</p>';
